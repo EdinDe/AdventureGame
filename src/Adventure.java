@@ -35,13 +35,41 @@ public class Adventure {
     }
 
     public boolean goNorth(){
-        if (currentRoom.equals(null)){
+        if (currentRoom.getNorth().equals(null)) {
             return false;
         }else{
             currentRoom = currentRoom.getNorth();
             return true;
 
         }
+    }
+    public boolean goWest() {
+        if (currentRoom.getWest().equals(null)) {
+            return false;
+        } else {
+            currentRoom = currentRoom.getWest();
+            return true;
 
+        }
+
+    }
+
+    public boolean goEast() {
+        if (currentRoom.getEast().equals(null)) {
+            return false;
+        } else {
+            currentRoom = currentRoom.getEast();
+            return true;
+
+        }
+    }
+    public boolean goSouth() {
+        if (currentRoom.getSouth().equals(null)) {
+            return false;
+        } else {
+            currentRoom = currentRoom.getSouth();
+            return true;
+
+        }
     }
 }

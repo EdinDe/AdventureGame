@@ -24,9 +24,8 @@ public class Room {
     public void setWest(Room west) {
         this.west = west;
     }
-
-    public void setSouth(Room south) {
-        this.south = south;
+    public void setSouth(Room south){
+        this.south=south;
     }
 
     public Room getNorth() {
